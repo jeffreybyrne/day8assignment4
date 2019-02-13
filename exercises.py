@@ -13,3 +13,18 @@ for num in range(1,101):
         print('Maker')
     else:
         print(num)
+
+#Exercise 12
+# PizzaMaker wants to handle bulk orders of pizzas, with varying amounts of toppings on each. Ask the user for a number of pizzas - call it quantity.
+# We then want to ask the user for quantity more numbers - the number of toppings on that pizza - and print them out
+
+print('How many pizzas do you want to order?')
+quantity = int(input())
+
+def how_many_toppings(pizza_num):
+    print('How many toppings on pizza {}?'.format(pizza_num))
+    num_toppings = int(input())
+    print('You have ordered a pizza with {} toppings.'.format(num_toppings))
+
+for num in range(1,quantity+1):
+    how_many_toppings(num)
